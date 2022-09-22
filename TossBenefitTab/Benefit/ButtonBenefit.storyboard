@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Button Benefit View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ButtonBenefitViewController" id="Y6W-OH-hqX" customClass="ButtonBenefitViewController" customModule="TossBenefitTab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4N0-Vt-x6e">
+                                <rect key="frame" x="30" y="54" width="354" height="718"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BTB-J5-5W4">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="110"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="버튼을 누르기만 해도 포인트를 드려요" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1N-gf-NjD">
+                                                <rect key="frame" x="8" y="42.5" width="197" height="57.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="버튼을 누르면 다른 앱이 열려요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Zx-D5-lJo">
+                                                <rect key="frame" x="8" y="8" width="195.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                <color key="textColor" systemColor="systemGrayColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="8Zx-D5-lJo" firstAttribute="top" secondItem="BTB-J5-5W4" secondAttribute="top" constant="8" id="3Q7-ml-WhJ"/>
+                                            <constraint firstItem="8Zx-D5-lJo" firstAttribute="leading" secondItem="BTB-J5-5W4" secondAttribute="leading" constant="8" id="7eb-N7-zzY"/>
+                                            <constraint firstItem="F1N-gf-NjD" firstAttribute="leading" secondItem="8Zx-D5-lJo" secondAttribute="leading" id="9aG-LL-O9M"/>
+                                            <constraint firstAttribute="bottom" secondItem="F1N-gf-NjD" secondAttribute="bottom" constant="10" id="AXG-ZN-rZ5"/>
+                                            <constraint firstAttribute="height" constant="110" id="gEJ-bx-yb6"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P06-ay-4kw">
+                                        <rect key="frame" x="0.0" y="110" width="354" height="608"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_button_benefit" translatesAutoresizingMaskIntoConstraints="NO" id="Q02-xB-OGD">
+                                                <rect key="frame" x="83.5" y="179" width="187" height="250"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="250" id="u6v-rG-1ZN"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Q02-xB-OGD" firstAttribute="centerX" secondItem="P06-ay-4kw" secondAttribute="centerX" id="81b-Ph-aed"/>
+                                            <constraint firstItem="Q02-xB-OGD" firstAttribute="centerY" secondItem="P06-ay-4kw" secondAttribute="centerY" id="QWo-Sm-MQJ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xr1-xw-r8q">
+                                <rect key="frame" x="30" y="792" width="354" height="60"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="f6R-7H-Esa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="누르고 10원 받기">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Xr1-xw-r8q" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="EWz-b3-mHu"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Xr1-xw-r8q" secondAttribute="bottom" constant="10" id="KfW-3K-vSM"/>
+                            <constraint firstItem="Xr1-xw-r8q" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="OTi-ID-ENb"/>
+                            <constraint firstItem="4N0-Vt-x6e" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="WfJ-oF-MAe"/>
+                            <constraint firstItem="4N0-Vt-x6e" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="fAr-2l-rHR"/>
+                            <constraint firstItem="Xr1-xw-r8q" firstAttribute="top" secondItem="4N0-Vt-x6e" secondAttribute="bottom" constant="20" id="h7j-np-imN"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="4N0-Vt-x6e" secondAttribute="trailing" constant="30" id="qdO-vV-DSO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ctaButton" destination="Xr1-xw-r8q" id="hJ0-FF-4pl"/>
+                        <outlet property="vStackView" destination="4N0-Vt-x6e" id="f9C-AA-yIw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="73.913043478260875" y="64.955357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_button_benefit" width="187" height="319.33334350585938"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
